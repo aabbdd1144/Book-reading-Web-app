@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Read</title>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div id="toolbar">
+    <button id="back">←</button>
+    <span id="title">Loading…</span>
+    <select id="theme">
+      <option value="light">☀️</option>
+      <option value="sepia">📰</option>
+      <option value="dark">🌙</option>
+    </select>
+    <input type="range" id="fontSize" min="50" max="200" value="100"/>
+  </div>
+
+  <div id="viewer" class="viewer"></div>
+
+  <script src="js/epub.min.js"></script>
+  <script src="js/pdf.min.js"></script>
+  <script type="module" src="js/reader.js"></script>
+</body>
+</html>
